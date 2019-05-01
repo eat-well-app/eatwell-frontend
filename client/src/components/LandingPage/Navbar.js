@@ -15,10 +15,6 @@ const styles = {
   grow: {
     flexGrow: 1,
   },
-  menuButton: {
-    marginLeft: -12,
-    marginRight: 20,
-  },
 };
 
 function ButtonAppBar(props) {
@@ -27,13 +23,16 @@ function ButtonAppBar(props) {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-          <Typography textAlign="left" variant="h6" color="inherit" className={classes.grow}>
+          <Typography variant="h6" color="inherit" className={classes.grow}>
             EatWell
           </Typography>
+          <Typography variant="h8" color="inherit" className={classes.grow}>Welcome, User</Typography>
+          <section>
           <Button color="inherit">Features</Button>
           <Button color="inherit">Pricing</Button>
           <Button color="inherit">Team</Button>
           <Button color="inherit">Login</Button>
+          </section>
         </Toolbar>
       </AppBar>
     </div>
